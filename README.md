@@ -2,9 +2,9 @@ Toki Pona Visual Dictionary
 ===========================
 *comming soon*
 
-!(https://raw.githubusercontent.com/x-raizor/tokipona/pics/ala.png)
-!(https://raw.githubusercontent.com/x-raizor/tokipona/pics/a.png)
-!(https://raw.githubusercontent.com/x-raizor/tokipona/pics/monsi.png)
+!(https://raw.githubusercontent.com/x-raizor/visual-tokipona/master/pics/ala.png)
+!(https://raw.githubusercontent.com/x-raizor/visual-tokipona/master/pics/a.png)
+!(https://raw.githubusercontent.com/x-raizor/visual-tokipona/master/pics/monsi.png)
 
 Toki Pona Dictionary in pictures. It has translations of 123 Toki Pona’s words to English, Italian and Russian.
 
