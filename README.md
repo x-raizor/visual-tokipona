@@ -1,5 +1,6 @@
-Toki Pona Visual Dictionary *comming soon*
-=========================================
+Toki Pona Visual Dictionary
+===========================
+*comming soon*
 
 Toki Pona Dictionary in pictures. It has translations of 123 Toki Pona’s words to English, Italian and Russian.
 
@@ -12,8 +13,9 @@ Second, it was fun to see some stories with pictures we made.
 
 
 ## Credits
-Design — Misha Shkitov, Andrei Shapiro
-Images — Misha Shkitov
+* Design — Misha Shkitov, Andrei Shapiro
+* Images — Misha Shkitov
+
 
 ## License
 You can freely use icons and data set in your projects 
