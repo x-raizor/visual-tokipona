@@ -1,0 +1,38 @@
+<head>
+	<div class="column6">
+		<div class="logo">visual toki pona</div>
+	</div>
+	<div class="column2">
+		<div class="dictionary"><a href="index.html">dictionary</a></div>
+	</div>
+	<div class="column2">
+		<div class="game"><a href="game.html">game</a></div>
+	</div>
+	<div class="column2">
+		<form action="" id="">
+			<div class="search">
+				<input type="search" placeholder="Search">
+				<input type="image" src="img/search.jpg">
+			</div>
+		</form>
+	</div>
+</head>
+
+<section id="dictionary">
+		{{#cards}}
+		<div class="column6">
+			<div class="box">
+				<img class="pic" src="pics/{{image}}.png"></img>
+				<div class="box2">
+					<div class="language">english</div>
+					<div class="words">{{eng}}</div>
+					<div class="language">русский</div>
+					<div class="words">{{rus}}</div>
+					<div class="language">italiano</div>
+					<div class="words">{{ita}}</div>
+				</div>
+				<p class="word">{{toki}}</p>
+			</div>
+		</div>
+		{{/cards}}
+</section>
