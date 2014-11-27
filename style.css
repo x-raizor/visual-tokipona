@@ -1,8 +1,17 @@
-BODY{
-	width:1120px;
+* {
+	margin: 0;
+	padding: 0;
+}
+.wrapper {
+	width: 1120px;
 	margin: 0 auto;
 }
-
+.main {
+	display: table;
+}
+.container {
+	width: 1120px;
+}
 .header{
 	height: 95px;
 	
@@ -19,21 +28,22 @@ BODY{
 }
 
 @media screen and (max-width: 1145px) {
-	BODY {
+	.container {
     	width: 512px;
 	}
 
 	.col2{
-	width:512px;
-	display: inline-block;
-	margin-left: 0px;
+		width:512px;
+		display: inline-block;
+		margin-left: 0px;
 	}
+
 	.header{
-	height: 158px;
+		height: 158px;
 	}
 }
 
-.logo{
+.logo {
 	display: inline-block;
 	white-space: pre;
 	font-family: Verdana;
@@ -42,13 +52,13 @@ BODY{
 	margin-top: 27px;
 }
 
-.dictionary{
+.dictionary {
 	display: inline-block;
 	border-top: #000000 solid 7px;
 	margin-top: 50px;
 }
 
-.dictionary>a{
+.dictionary>a {
 	color: #000000;
 	font-family: verdana;
 	font-size: 26px;
@@ -158,7 +168,6 @@ p{
 
 .footer{
 	height: 50px;
-	float: left;
 	width: inherit;
 }
 
