@@ -1,34 +1,42 @@
+
+.header{
+	height: 96px;
+}
+
 .logo{
-	font-family: Arial Black;
-	font-size:59px;
-	margin-top:47px;
+	font-family: Verdana;
+	font-weight: bold;
+	font-size:57px;
+	margin-top:27px;
+	white-space: pre;
+	display: inline-block;
 }
 .dictionary{
-	margin-top:73px;
-	margin-left:37px;
+	display: inline-block;
+	margin-top:51px;
+	margin-left: 38px;
 	border-top:#000000 solid 7px; 
-	padding-top:4px;
 	width:127px;
 }
 .dictionary>a{
-	font-family: 'Helvetica';
-	font-size: 30px;
+	font-family: Verdana;
+	font-size: 26px;
 	text-decoration: none;
 	color: #000000;
 }
 .game{
-	margin-top:73px;
-	margin-left:32px;
+	margin-top:51px;
+	margin-left: 29px;
+	display: inline-block;
 	border-top:#fff solid 7px; 
-	padding-top:4px;
-	width:73px;
+	width:71px;
 }
 .game:hover{
 	border-top:#000 solid 7px; 
 }
 .game>a{
-	font-family: 'Helvetica';
-	font-size: 30px;
+	font-family: Verdana;
+	font-size: 26px;
 	text-decoration: none;
 	color: #000000;
 }
@@ -41,34 +49,38 @@
 .search{
 	width: 193px;
 	height:26px;
-	margin-top:85px;
+	display: inline-block;
 	border: 2px solid #000000;
 	background: transparent;
 	float:right;
+	position: relative;
+	buttom:50px;
 	
-    
 }
  
 
 input[type="image"] {
     width: 16px; 
     height:17px;
-	position:relative;
-	left:10px;
-	top:4px;
+	display: inline-block;
+	position: relative;
+	top: 3px;
    }
    
 input[type="search"] { 
-	position:relative;
-	left:2px;
+	display: inline-block;
 	color: #000; 
     outline: none;
 	border:none;
+	width: 164px;
+	margin-left: 4px;
+	margin-top: 5px; 
    }
    
 input::-webkit-input-placeholder {
-	font-size:16px;
-	color: #9B9B9B; 
+	font-size:14px;
+	color: #9B9B9B;
+
 	
 }
 input:-moz-placeholder {
@@ -77,56 +89,54 @@ input:-moz-placeholder {
 }
 
 .box{
-	width:513px;
-	height:auto;
-	border-top:#000 solid 7px;
-	margin-top:61px;
-	float:left;
-	
-	
-	
+	border-top:#000000 solid 7px; 
+	padding-top: 30px;
+	margin-top: 57px;
 }
-.box-right{
-	width:513px;
-	height:auto;
-	border-top:#000 solid 7px;
-	margin-top:61px;
-	float:right;
-	
-}
+
 .pic{
 	width:173px;
 	height:auto;
-	margin-top: 30px;
 	margin-right: 23px;
 	float:left;
 	margin-bottom:10px;
 }
-.word{
-	font-family:Arial Black;
-	font-size:37px;
-	float:left;
-}
-.box2{
-	width:293px;
-	height:auto;
-	float:right;
-}	
-.language{
-	font-family:Arial;
-	font-size:16px;
-	border-bottom: 1px solid #000;
-	padding-bottom: 7px;
-	margin-top:21px;
-}
+
 .words{
-	font-family:Arial;
-	font-size:16px;
-	margin-top:5px;
+	font-family: Verdana;
+	font-size: 15px;
+	margin-bottom:24px;
+	margin-top:2px;
 }
-   
-   
-   
+
+.language{
+	font-family: Verdana;
+	font-size: 15px;
+	border-bottom: #000000 solid 1px;
+	padding-bottom: 5px;
+}
+
+.word{
+	font-family: Verdana;
+	font-weight: bold;
+	font-size: 32px;
+	margin-top: 10px;
+}
+
+.inbox1{
+	float: left;
+	word-break: break-word;
+}
+
+.inbox2{
+	float:right;
+	word-break: break-word;
+	width: 293px;
+}
+
+}	
+
+
    
    
    
