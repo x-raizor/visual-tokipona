@@ -9,8 +9,8 @@ html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,addre
 .column1, .column2, .column3, .column4, .column5, .column6, .column7, .column8, .column9, .column10, .column11, .column12, .column13, .column14, .column15, .column16 {
     display:inline;
     float:left;
-    margin-left:10px;
-    margin-right:10px;
+    margin-left:27px;
+    margin-right:27px;
 }
 .container12 .alpha, .container16 .alpha {margin-left:0;}
 .container12 .omega, .container16 .omega {margin-right:0;}
@@ -19,7 +19,9 @@ html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,addre
 .container12 .column3 {width:265px;}
 .container12 .column4 {width:360px;}
 .container12 .column5 {width:455px;}
-.container12 .column6 {width:550px;}
+/**/
+.container12 .column6 {width:512px;}
+/**/
 .container12 .column7 {width:645px;}
 .container12 .column8 {width:740px;}
 .container12 .column9 {width:835px;}
@@ -77,7 +79,9 @@ html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,addre
     .container12 .column3 {width:220px;}
     .container12 .column4 {width:300px;}
     .container12 .column5 {width:380px;}
-    .container12 .column6 {width:460px;}
+    /**/
+    .container12 .column6 {width:503px;}
+    /**/
     .container12 .column7 {width:540px;}
     .container12 .column8 {width:620px;}
     .container12 .column9 {width:700px;}
@@ -135,7 +139,9 @@ html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,addre
     .container12 .column3 {width:172px;}
     .container12 .column4 {width:236px;}
     .container12 .column5 {width:300px;}
-    .container12 .column6 {width:364px;}
+    /**/
+    .container12 .column6 {width:503px;}
+    /**/
     .container12 .column7 {width:428px;}
     .container12 .column8 {width:492px;}
     .container12 .column9 {width:556px;}
@@ -204,8 +210,8 @@ html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,addre
     .container16 .column14,
     .container16 .column15,
     .container16 .column16 {
-        margin:0 0 20px 0;
-        width:300px;
+        margin:0 auto;
+        width:503px;
     }
     .container12 .prefix1, .container12 .prefix2, .container12 .prefix3, .container12 .prefix4, .container12 .prefix5, .container12 .prefix6, .container12 .prefix7, .container12 .prefix8, .container12 .prefix9, .container12 .prefix10, .container12 .prefix11, .container16 .prefix1, .container16 .prefix2, .container16 .prefix3, .container16 .prefix4, .container16 .prefix5, .container16 .prefix6, .container16 .prefix7, .container16 .prefix8, .container16 .prefix9, .container16 .prefix10, .container16 .prefix11, .container16 .prefix12, .container16 .prefix13, .container16 .prefix14, .container16 .prefix15 {padding-left:0;}
     .row {margin:0;}

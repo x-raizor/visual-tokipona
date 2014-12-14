@@ -14,7 +14,6 @@
 .dictionary{
 	display: inline-block;
 	margin-top:51px;
-	margin-left: 38px;
 	border-top:#000000 solid 7px; 
 	width:127px;
 }
@@ -26,7 +25,7 @@
 }
 .game{
 	margin-top:51px;
-	margin-left: 29px;
+	margin-left: 50px;
 	display: inline-block;
 	border-top:#fff solid 7px; 
 	width:71px;
@@ -54,7 +53,7 @@
 	background: transparent;
 	float:right;
 	position: relative;
-	buttom:50px;
+	bottom:30px;
 	
 }
  
