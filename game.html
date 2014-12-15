@@ -1,27 +1,50 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>visual toki pona</title>
+    <title>Toki Pona · Visual Dictionary</title>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="css/1140.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="1140.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <!--
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="js/mustache.js"></script>
+    <script src="js/data.js"></script>
+    <script src="js/engine.js"></script>
+    -->
 </head>
 <body>
-<!--header-->
-	<div class="container12">
-		<div class="column6">
-			<div class="logo">visual toki pona</div>
-		</div>
-		<div class="column2">
-			<div class="dictionary"><a href="index.html">dictionary</a></div>
-		</div>
-		<div class="column2">
-			<div class="game">game</div>
-		</div>
-		<div class="column2">
-			<div class=""></div>
-		</div>
+	<div id="canvas" class="container12">
+		<div class="header">
+        <div class="column6">
+            <div class="logo">visual toki pona</div>
+        </div>
+        <div class="column6">
+            <div class="dictionary"><a href="index.html">dictionary</a></div>
+            <div class="game"><a href="game.html">game</a></div>
+            <form action="" id="">
+                <div class="search">
+                    <input type="search" placeholder="Search">
+                    <input type="image" src="img/search.jpg">
+                </div>
+            </form>
+        </div>
+        </div>
+        <div class="menu_game">
+            <div class="switch">
+                <a href="" class="stories">Stories</a>
+                <a href="" class="examine">Examine</a>
+            </div>
+            <a href="" class="next">Next</a>
+        </div>
+        <div class="pictures">
+            <img class="pic" src="pics/a.png"></img>
+            <div class="rect"></div>
+            <img class="pic" src="pics/kala.png"></img>
+            <div class="rect"></div>
+            <img class="pic" src="pics/ijo.png"></img>
+            <div class="rect"></div>
+        </div>
 	</div>
+  
 </body>
 </html>

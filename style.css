@@ -90,7 +90,7 @@ input:-moz-placeholder {
 .box{
 	border-top:#000000 solid 7px; 
 	padding-top: 30px;
-	margin-top: 57px;
+	margin-top: 25px;
 }
 
 .pic{
@@ -133,12 +133,65 @@ input:-moz-placeholder {
 	width: 293px;
 }
 
-}	
+/* GAME */
 
+.menu_game{
+	width: 1078px;
+	margin-left: 27px;
+	margin-top:48px;
+	border-top: #000000 solid 7px;
+}
 
-   
-   
-   
+.switch{
+	margin-top: 31px;
+}
+
+.stories{
+	background-image: url(img/stories.jpg);
+	width: 103px;
+	height: 43px;
+	font-family: Verdana;
+	font-size: 20px;
+	text-align: center;
+	display: inline-block;
+	line-height: 42px;
+	text-decoration: none;
+	color: #000000;
+}
+
+.examine{
+	background-image: url(img/examine.jpg);
+	width: 115px;
+	height: 43px;
+	font-family: Verdana;
+	font-size: 20px;
+	text-align: center; 
+	display: inline-block;
+	line-height: 42px;
+	text-decoration: none;
+	color: #000000;
+	position: relative;
+	right: 4px;
+}
+
+.examine:hover{
+	background-image: url(img/examine-h.jpg);
+	width: 115px;
+	height: 43px;
+}
+
+.pictures{
+	width: 1078px;
+	margin: 0 auto;
+	margin-top:48px;
+}
+
+.rect{
+	width: 292px;
+	height: 203px;
+	background: #BFBFBF;
+	opacity:0.1;
+}
    
    
    
