@@ -137,13 +137,16 @@ input:-moz-placeholder {
 
 .menu_game{
 	width: 1078px;
+	height: 73px;
 	margin-left: 27px;
 	margin-top:48px;
 	border-top: #000000 solid 7px;
+	
 }
 
 .switch{
 	margin-top: 31px;
+	float: left;
 }
 
 .stories{
@@ -179,21 +182,62 @@ input:-moz-placeholder {
 	width: 115px;
 	height: 43px;
 }
+.next{
+	background-image: url(img/next.jpg);
+	width: 133px;
+	height: 43px;
+	font-family: Verdana;
+	font-size: 20px;
+	text-align: center;
+	display: inline-block;
+	line-height: 42px;
+	text-decoration: none;
+	color: #000000;
+	float: right;
+	margin-top: 31px;
+}
+.next:hover{
+	background-image: url(img/next-h.jpg);
+	width: 133px;
+	height: 43px;
+}
 
-.pictures{
+.img_game{
 	width: 1078px;
 	margin: 0 auto;
 	margin-top:48px;
 }
 
-.rect{
+.gbox{
+	display:inline-block;
 	width: 292px;
 	height: 203px;
-	background: #BFBFBF;
-	opacity:0.1;
+	background-color: #E2E2E2;
 }
-   
-   
+
+.gbox2{
+	display:inline-block;
+	margin-left: 95px;
+	margin-right: 95px;
+	width: 292px;
+	height: 203px;
+	background-color: #E2E2E2;
+}
+
+.pic_game{
+	display:inline-block;
+	vertical-align: middle;
+	text-align: center;
+	width: 173px;
+	height: auto;
+	
+}
+
+.gray{
+	background-color: #E2E2E2;
+	width: 292px;
+	height: auto;
+}
    
    
    
