@@ -16,7 +16,7 @@ body {
 .logo{
 	font-weight: bold;
 	font-size:57px;
-	margin-top:27px;
+	margin-top:29px;
 	white-space: pre;
 	display: inline-block;
 }
@@ -26,7 +26,7 @@ body {
 .dictionary{
 	display: inline-block;
 	margin-top:51px;
-	width:127px;
+	width:112px;
 }
 .dictionary>a{
 	font-size: 26px;
@@ -35,9 +35,9 @@ body {
 }
 .game{
 	margin-top:51px;
-	margin-left: 50px;
+	margin-left: 102px;
 	display: inline-block;
-	width:71px;
+	width:65px;
 }
 .game:hover{
 	border-top:#000 solid 7px; 
@@ -95,15 +95,18 @@ input:-moz-placeholder {
 	color: #9B9B9B; 
 }
 
-.box{
+.box {
 	border-top:#000000 solid 7px; 
 	padding-top: 30px;
 	margin-top: 25px;
 	display: block;
-	/*display: inline-block;*/
-	/*min-height: 240px;*/
 }
-
+.box:nth-child(even) { 
+	float: right;
+}
+.box:nth-child(odd) { 
+	float: left;
+}
 .pic{
 	width:173px;
 	height:auto;
@@ -211,25 +214,23 @@ input:-moz-placeholder {
 }
 
 .img_game{
-	width: 1078px;
+	width: 1086px;
 	margin: 0 auto;
 	margin-top:48px;
 }
 
 .gbox{
-	display:inline-block;
+	display:table-cell;
 	width: 292px;
 	height: 203px;
-	background-color: #E2E2E2;
+	text-align: center;
+	vertical-align: middle;
+	position: relative;
 }
 
 .gbox2{
-	display:inline-block;
-	margin-left: 95px;
-	margin-right: 95px;
-	width: 292px;
-	height: 203px;
-	background-color: #E2E2E2;
+	padding-left: 101px;
+	padding-right: 101px;
 }
 
 .pic_game{
@@ -242,9 +243,11 @@ input:-moz-placeholder {
 }
 
 .gray{
-	background-color: #E2E2E2;
+	background-color: rgba(0,0,0,.05);
 	width: 292px;
-	height: auto;
+	height: 100%;
+	position: absolute;
+	top: 0;
 }
    
    

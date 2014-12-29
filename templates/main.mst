@@ -26,7 +26,7 @@
             <div class="inbox2">
                 <div class="language">english</div>
                 <div class="words">{{eng}}</div>
-                <div class="language">СЂСѓСЃСЃРєРёР№</div>
+                <div class="language">русский</div>
                 <div class="words">{{rus}}</div>
                 <div class="language">italiano</div>
                 <div class="words">{{ita}}</div>
