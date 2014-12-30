@@ -1,8 +1,3 @@
-/*
-* TODOs
-* convert pixels to ems
-*/
-
 body {
 	font-family: Helvetica, Arial, sans-serif;
 	font-size: 100%;
@@ -29,8 +24,16 @@ body {
 	width:112px;
 	margin-left: 8px;
 }
+
+@media only screen and (min-width: 500px){
+	.dictionary{
+		margin-left: 0px;
+		margin-bottom: 20px;
+	}
+}
+
 .dictionary>a{
-	font-size: 26px;
+	font-size: 1.63em;
 	text-decoration: none;
 	color: #000000;
 }
@@ -44,7 +47,7 @@ body {
 	border-top:#000 solid 7px; 
 }
 .game>a{
-	font-size: 26px;
+	font-size: 1.63em;
 	text-decoration: none;
 	color: #000000;
 }
@@ -102,12 +105,16 @@ input:-moz-placeholder {
 	margin-top: 25px;
 	display: block;
 }
+
+/*
 .box:nth-child(even) { 
 	float: right;
 }
 .box:nth-child(odd) { 
 	float: left;
 }
+*/
+
 .pic{
 	width:173px;
 	height:auto;
@@ -117,20 +124,20 @@ input:-moz-placeholder {
 }
 
 .words{
-	font-size: 15px;
+	font-size: 0.938em;
 	margin-bottom:24px;
 	margin-top:2px;
 }
 
 .language{
-	font-size: 15px;
+	font-size: 0.938em;
 	border-bottom: #000000 solid 1px;
 	padding-bottom: 5px;
 }
 
 .word{
 	font-weight: bold;
-	font-size: 32px;
+	font-size: 2em;
 	margin-top: 10px;
 }
 
@@ -253,8 +260,7 @@ input:-moz-placeholder {
 }
    
    
-   
-   
+
    
    
    
