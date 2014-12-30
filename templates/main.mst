@@ -4,14 +4,14 @@
 			<div class="logo">visual toki pona</div>
 		</div>
 		<div class="column6">
-			<div class="dictionary current"><a href="index.html">dictionary</a></div>
+			<div class="dictionary current">dictionary</div>
 			<div class="game"><a href="game.html">game</a></div>
-			<form action="" id="">
-				<!-- div class="search">
-					<input type="search" placeholder="Search">
+			<!-- form action="">
+				<div class="search">
+					<input ng-model="s_text" type="search" placeholder="Search">
 					<input type="image" src="img/search.jpg">
-				</div -->
-			</form>
+				</div>
+			</form -->
 		</div>
 	</div>
 </head>
@@ -26,7 +26,7 @@
             <div class="inbox2">
                 <div class="language">english</div>
                 <div class="words">{{eng}}</div>
-                <div class="language">русский</div>
+                <div class="language">СЂСѓСЃСЃРєРёР№</div>
                 <div class="words">{{rus}}</div>
                 <div class="language">italiano</div>
                 <div class="words">{{ita}}</div>
