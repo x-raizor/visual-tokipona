@@ -16,13 +16,13 @@
 }
 
 .first, .second, .third{
-	display: inline-block;
+	float: left;
 	height: auto;
 }
 
 .second{
-	margin-left: 96px;
-	margin-right: 96px;
+	margin-left: 100px;
+	margin-right: 100px;
 }
 
 .examine{

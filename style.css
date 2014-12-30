@@ -15,7 +15,7 @@ body {
 
 .logo{
 	font-weight: bold;
-	font-size:57px;
+	font-size:3.56em;
 	margin-top:29px;
 	white-space: pre;
 	display: inline-block;
@@ -137,6 +137,7 @@ input:-moz-placeholder {
 .inbox1{
 	float: left;
 	word-break: break-word;
+	max-width: 200px;
 }
 
 .inbox2{
