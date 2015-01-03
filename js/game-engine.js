@@ -9,16 +9,10 @@ function randInt(min, max) {
 };
 
 
-function getPicName() {
-/** 
- * Return string with name of one on 123 picture without extension
- */
-  return data["cards"][randInt(0, 122)]["image"];
-};
-
 
 // From http://baagoe.com/en/RandomMusings/javascript/
 // Johannes Baagøe <baagoe@baagoe.com>, 2010
+// Helper for Alea randomizer
 function Mash() {
   var n = 0xefc8249d;
 
@@ -42,6 +36,7 @@ function Mash() {
 }
 
 
+// Randomizer Alea
 // From http://baagoe.com/en/RandomMusings/javascript/
 function Alea() {
   return (function(args) {
@@ -96,18 +91,32 @@ function Alea() {
 };
 
 
-var random = Alea();
+/**
+ * App Controllers 
+ */
+var random = Alea(); // inizialize better randomiator
+var gameApp = angular.module('tokiGame', []);
+gameApp.controller('gamePlayer', function ($scope, $http){
 
-/* App Controllers */
-var nameApp = angular.module('tokiGame', []);
-nameApp.controller('gamePlayer', function ($scope){
-    $scope.one = getPicName();
-    $scope.two = getPicName();
-    $scope.three = getPicName();
-                        
+    // fetch pictures data from json
+    $http.get('js/tokipona.json').success(function(data) {
+        $scope.cards = data;
+        $scope.nextThree(); // set first three picture
+    });
+  
+    $scope.getCard = function() {
+    /** 
+     * Return string with name of one on 123 picture without extension
+     */
+        return randInt(0, 122);
+    };
+
     $scope.nextThree = function() {
-        $scope.one = getPicName();
-        $scope.two = getPicName();
-        $scope.three = getPicName();
+    /** 
+     * Set filenames for three picture in model
+     */
+        $scope.one   = $scope.cards[$scope.getCard()];
+        $scope.two   = $scope.cards[$scope.getCard()];
+        $scope.three = $scope.cards[$scope.getCard()];
     };
 });

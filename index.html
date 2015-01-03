@@ -1,19 +1,65 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <title>Toki Pona · Visual Dictionary</title>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <link href="1140.css" rel="stylesheet">
-    <link href="style.css" rel="stylesheet">
-    <script src="js/jquery-1.11.1.min.js"></script>
-    <script src="js/mustache.js"></script>
-    <script src="js/masonry.pkgd.min.js"></script>
-    <script src="js/data.js"></script>
-    <script src="js/engine.js"></script>
-</head>
-<body>
-	<div id="canvas" class="container12">
-		Loading...
-	</div>
-</body>
+<html lang="en" ng-app="dictApp">
+    <head>
+        <title>Toki Pona · Visual Dictionary</title>
+    	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <link href="1140.css" rel="stylesheet">
+        <link href="style.css" rel="stylesheet">
+    </head>
+    <body ng-controller="dictCtrl">
+    	<div id="canvas" class="container12">
+    		<head>
+                <div class="header">
+                    <div class="column6">
+                        <div class="logo">visual toki pona</div>
+                    </div>
+                    <div class="column6">
+                        <div class="dictionary current">dictionary</div>
+                        <div class="game"><a href="game.html">game</a></div>
+                        <!-- form action="">
+                            <div class="search">
+                                <input ng-model="s_text" type="search" placeholder="Search">
+                                <input type="image" src="img/search.jpg">
+                            </div>
+                        </form -->
+                    </div>
+                </div>
+            </head>
+            <section id="dictionary" item-selector=".box" load-images="false" masonry="{ transitionDuration: '0.4s', transform: 'scale(1)' }" >
+                <div masonry-brick class="box column6" ng-repeat="card in cards">
+                    <div class="inbox1">
+                        <img class="pic" ng-src="pics/{{card.image}}.png"></img>
+                        <div class="word">{{card.toki}}</div>
+                    </div>
+                    <div class="inbox2">
+                        <div class="language">english</div>
+                        <div class="words">{{card.eng}}</div>
+                        <div class="language">русский</div>
+                        <div class="words">{{card.rus}}</div>
+                        <div class="language">italiano</div>
+                        <div class="words">{{card.ita}}</div>
+                    </div>
+                </div>      
+            </section>
+    	</div>
+        <footer class="container12">
+            <p class="column12">Project by <a href="">Andrei Shapiro</a> and <a href="">Michail Shitov,</a> Graphics by Michail Shitov</p>
+        </footer>
+
+        <script src="js/jquery.min.js"></script>
+        <script src="js/jquery.bridget.js"></script>
+        <script src="js/get-style-property.js"></script>        
+        <script src="js/get-size.js"></script>
+        <script src="js/EventEmitter.min.js"></script>
+        <script src="js/eventie.js"></script>
+        <script src="js/doc-ready.js"></script>
+        <script src="js/matches-selector.js"></script>
+        <script src="js/item.js"></script>
+        <script src="js/outlayer.js"></script>
+        <script src="js/masonry.pkgd.min.js"></script>
+        <script src="js/imagesloaded.js"></script>
+        <script src="js/angular.min.js"></script>
+        <script src="js/angular-masonry.min.js"></script>
+        <script src="js/engine.js"></script>
+    </body>
 </html>

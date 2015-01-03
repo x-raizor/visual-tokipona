@@ -1,7 +1,9 @@
-$(document).ready(
-	function() {
-		$.get('templates/main.mst', function(template) {
-		var rendered = Mustache.render(template, data);
-		$('#canvas').html(rendered);
-			});
+/**
+ * AngularJS Controller 
+ */
+var dictApp = angular.module('dictApp', ['wu.masonry']);
+dictApp.controller('dictCtrl', function ($scope, $http){
+	$http.get('js/tokipona.json').success(function(data) {
+		$scope.cards = data;
 	});
+});

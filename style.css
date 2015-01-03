@@ -15,10 +15,18 @@ body {
 	white-space: pre;
 	display: inline-block;
 }
+
+.logo > a {
+	text-decoration: none;
+	color: #000;
+}
+
 .current {
 	border-top:#000000 solid 7px; 
 }
+
 .dictionary{
+	font-size: 1.63em;
 	display: inline-block;
 	margin-top:51px;
 	width:112px;
@@ -33,11 +41,11 @@ body {
 }
 
 .dictionary>a{
-	font-size: 1.63em;
 	text-decoration: none;
 	color: #000000;
 }
 .game{
+	font-size: 1.63em;
 	margin-top:51px;
 	margin-left: 102px;
 	display: inline-block;
@@ -47,7 +55,6 @@ body {
 	border-top:#000 solid 7px; 
 }
 .game>a{
-	font-size: 1.63em;
 	text-decoration: none;
 	color: #000000;
 }
@@ -180,6 +187,7 @@ input:-moz-placeholder {
 	line-height: 42px;
 	text-decoration: none;
 	color: #000000;
+	/*border-bottom: 2px dashed #7F7F7F;*/
 }
 
 .examine{
@@ -260,15 +268,39 @@ input:-moz-placeholder {
 }
    
    
+footer p {
+	border-top: 1px solid #000;
+	padding-top: 1em;
+	margin: 4em 0 0 0;
+}
+   
+   
+.game_translation {
+	width: 1086px;
+	margin: 0 auto;
+	margin-top: 28px;
+}
 
-   
-   
-   
-   
-   
-   
-   
-   
+.game_translation .word {
+	border-bottom: 2px dashed #7F7F7F;
+	text-decoration: none;
+	color: #000000;
+}
+
+.game_translation .inbox2 {
+	float: none;
+	margin-top: 20px;
+}
+
+.first, .second, .third {
+	float: left;
+	height: auto;
+}
+
+.second {
+	margin-left: 100px;
+	margin-right: 100px;
+}
    
    
    

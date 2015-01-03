@@ -5,16 +5,12 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <link href="1140.css" rel="stylesheet">
     <link href="style.css" rel="stylesheet">
-    <script src="js/jquery-1.11.1.min.js"></script>
-    <script src="js/data.js"></script>
-    <script src="js/angular.min.js"></script>
-    <script src="js/game-engine.js"></script>
 </head>
 <body ng-controller="gamePlayer">
 	<div id="canvas" class="container12">
 		<div class="header">
         <div class="column6">
-            <div class="logo">visual toki pona</div>
+            <div class="logo"><a href="index.html">visual toki pona</a></div>
         </div>
         <div class="column6">
             <div class="dictionary"><a href="index.html">dictionary</a></div>
@@ -37,20 +33,56 @@
         <div class="img_game">
           
                 <div class="gbox">
-                    <img class="pic_game" src="pics/{{one}}.png">
+                    <img class="pic_game" src="pics/{{one.image}}.png">
                     <div class="gray"></div>
                 </div>
                 <div class="gbox gbox2">
-                    <img class="pic_game" src="pics/{{two}}.png">
+                    <img class="pic_game" src="pics/{{two.image}}.png">
                     <div class="gray"></div>
                 </div>
                 <div class="gbox">
-                    <img class="pic_game" src="pics/{{three}}.png">
+                    <img class="pic_game" src="pics/{{three.image}}.png">
                     <div class="gray"></div>
                 </div>
            
         </div>
+        <div class="game_translation">
+            <div class="first">
+                <a href="" class="word">{{one.toki}}</a>
+                <div class="inbox2">
+                    <div class="language">english</div>
+                    <div class="words">{{one.eng}}</div>
+                    <div class="language">русский</div>
+                    <div class="words">{{one.rus}}</div>
+                    <div class="language">italiano</div>
+                    <div class="words">{{one.ita}}</div>
+                </div>
+            </div>
+            <div class="second">
+                <a href="" class="word">{{two.toki}}</a>
+                <div class="inbox2">
+                    <div class="language">english</div>
+                    <div class="words">{{two.eng}}</div>
+                    <div class="language">русский</div>
+                    <div class="words">{{two.rus}}</div>
+                    <div class="language">italiano</div>
+                    <div class="words">{{two.ita}}</div>
+                </div>
+            </div>
+            <div class="third">
+                <a href="" class="word">{{three.toki}}</a>
+                <div class="inbox2">
+                    <div class="language">english</div>
+                    <div class="words">{{three.eng}}</div>
+                    <div class="language">русский</div>
+                    <div class="words">{{three.rus}}</div>
+                    <div class="language">italiano</div>
+                    <div class="words">{{three.ita}}</div>
+                </div>
+            </div>
+        </div>
 	</div>
-  
+    <script src="js/angular.min.js"></script>
+    <script src="js/game-engine.js"></script>
 </body>
 </html>
