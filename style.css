@@ -1,10 +1,16 @@
+html, body, #canvas {
+	height: 100%;
+}
 body {
 	font-family: Helvetica, Arial, sans-serif;
 	font-size: 100%;
-	padding: 0 0 4em 0;
-	min-height: 100%;
 }
 
+body > #canvas {
+	height: auto;
+	min-height: 100%;
+	padding-bottom: 3em;
+}
 
 .header{
 	height: 110px;
@@ -179,29 +185,62 @@ input:-moz-placeholder {
 }
 
 .switch{
-	margin-top: 31px;
+	margin-top: 1.5em;
 	float: left;
 }
 
+.menu_game button {
+	width: 6em;
+	height: 2em;
+	background: #fff;
+	border: 1px solid #000;
+	font-size: 1.2em;
+	float: left;
+}
+.switch button.selected {
+	background-image: url(img/btn-bg.png);
+}
+.switch button:hover, .next:hover {
+	background-image: url(img/btn-bg.png);
+}
+
+.switch button.left {
+	border-top-left-radius: 8px;
+	border-bottom-left-radius: 8px;
+}
+.switch button.right {
+	border-left: none;
+	border-top-right-radius: 8px;
+	border-bottom-right-radius: 8px;
+}
+
+button.next{
+	float: right;
+	margin-top: 1.25em;
+	width: 8em;
+	height: 2em;
+	border-radius: 8px;
+}
+
+
+/*
 .stories{
-	background-image: url(img/stories.jpg);
+	background-image: url(img/btn-bg.png);
 	width: 103px;
 	height: 43px;
-	font-family: Verdana;
 	font-size: 20px;
 	text-align: center;
 	display: inline-block;
 	line-height: 42px;
 	text-decoration: none;
 	color: #000000;
-	/*border-bottom: 2px dashed #7F7F7F;*/
+
 }
 
 .examine{
-	background-image: url(img/examine.jpg);
+	background-image: url(img/btn-bg.png);
 	width: 115px;
 	height: 43px;
-	font-family: Verdana;
 	font-size: 20px;
 	text-align: center; 
 	display: inline-block;
@@ -217,25 +256,9 @@ input:-moz-placeholder {
 	width: 115px;
 	height: 43px;
 }
-.next{
-	background-image: url(img/next.jpg);
-	width: 133px;
-	height: 43px;
-	font-family: Verdana;
-	font-size: 20px;
-	text-align: center;
-	display: inline-block;
-	line-height: 42px;
-	text-decoration: none;
-	color: #000000;
-	float: right;
-	margin-top: 31px;
-}
-.next:hover{
-	background-image: url(img/next-h.jpg);
-	width: 133px;
-	height: 43px;
-}
+
+*/
+
 
 .img_game{
 	width: 1086px;
@@ -276,13 +299,22 @@ input:-moz-placeholder {
    
 
 footer {
-	bottom: 0;
+	clear: both;
+	position: relative;
+	z-index: 10;
+	height: 3em; 
+	margin-top: -8em !important;
+}
+
+footer.long {
+	height: 5em; 
+	margin-top: 0 !important;	
 }
 
 footer p {
 	border-top: 1px solid #000;
 	padding-top: 1em;
-	margin: 4em 0 0 0;
+	/*margin: 4em 0 0 0;*/
 }
 
 footer a {
