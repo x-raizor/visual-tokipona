@@ -157,6 +157,7 @@ gameApp.controller('gamePlayer', function ($scope, $http, $cookieStore){
         $scope.mode = !$scope.mode;
         $cookieStore.put('mode', !$cookieStore.get('mode'));
         $scope.showMode();     
+<<<<<<< HEAD
     }
 
 
@@ -169,6 +170,20 @@ gameApp.controller('gamePlayer', function ($scope, $http, $cookieStore){
     } else {
         $scope.show = tipsOn;
     }
+=======
+    }
+
+
+    // Controller initiation
+    // initiate tips trigger
+    var tipsOn = $cookieStore.get('tipsOn');
+    if (tipsOn == undefined || tipsOn == null) {
+        $scope.show = true;
+        $cookieStore.put('tipsOn', true);
+    } else {
+        $scope.show = tipsOn;
+    }
+>>>>>>> gh-pages
     
     // initiate mode trigger
     var mode = $cookieStore.get('mode');
@@ -186,6 +201,9 @@ gameApp.controller('gamePlayer', function ($scope, $http, $cookieStore){
     });
 
     $scope.showMode();
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> gh-pages
 });

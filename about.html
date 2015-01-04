@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="aboutApp">
+    <head>
+        <title>Toki Pona · Visual Dictionary</title>
+    	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link href="1140.css" rel="stylesheet">
+        <link href="style.css" rel="stylesheet">
+    </head>
+    <body ng-controller="aboutCtrl">
+        <div ng-include="'fork.html'"></div>x   
+    	<div id="canvas" class="container12">
+    		<head>
+                <div class="header">
+                    <div class="column12">
+                        <div class="logo"><a href="index.html">visual toki pona</a></div>
+                        <div class="menu_item"><a href="index.html">dictionary</a></div>
+                        <div class="menu_item"><a href="game.html">game</a></div>
+                        <div class="menu_item current">about</div>
+                        <!-- form action="">
+                            <div class="search">
+                                <input ng-model="s_text" type="search" placeholder="Search">
+                                <input type="image" src="img/search.jpg">
+                            </div>
+                        </form -->
+                    </div>
+                </div>
+            </head>
+            <article id="about" class="column12">
+                <section class="column4">
+                   <h1>Dictionary in&nbsp;pictures</h1>
+                    <p>The site has images for 123 Toki Pona's words and its translations to English, Russian and Italian.</p>
+                    <p>We were excited to know whether it is easy to learn other language having a bridge via pictures and the famous syntactic language.</p>
+                    <p>As an extra constraint we have chosen not to use any of symbols or signs in modern culture as much as it will possible.</p>
+                    <p>Besides all these, it was fun to see some stories with pictures we made. We hope, you will enjoy as well.</p>
+                    <!-- p>&nbsp;</p>
+                    <p>Andrei Shapiro and Michail Shkitov</p -->
+                </section>
+                <section class="column4">
+                    <h1>Toki Pona Language</h1>
+                    <p>Toki Pona is an artificial language which was invented in 2001 by translator and linguist Sonja Lang. That is a 'language of good' by its construction.
+                    'It was my attempt to understand the meaning of life in 120 words'. Read more in <a href="http://en.wikipedia.org/wiki/Toki_Pona">Wikipedia</a> or official <a href="http://tokipona.org">website.</a></p>
+                </section>
+                <section class="column4">
+                    <img src="pics/seme.png" alt="">
+                    <img src="pics/pona.png" alt="">
+                    
+                </section>
+            </article>
+            <footer ng-include="'footer.html'">
+            </footer>
+    	</div>
+        <script src="js/angular.min.js"></script>
+        <script src="js/engine.js"></script>
+    </body>
+</html>
