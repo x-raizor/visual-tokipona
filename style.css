@@ -34,26 +34,26 @@ body > #canvas {
 	border-top:#000000 solid 7px; 
 }
 
-.dictionary {
+.menu_item {
 	font-size: 1.63em;
 	display: inline-block;
-	margin-top:51px;
-	width:112px;
-	margin-left: 8px;
+	margin-top: 2em;
+	margin-left: 1em;
+	height: 2em;
 }
 
 @media only screen and (min-width: 500px){
-	.dictionary{
-		margin-left: 0px;
-		margin-bottom: 20px;
+	.menu_item{
+		/*margin-left: 0px;
+		margin-bottom: 20px;*/
 	}
 }
 
-.dictionary>a{
+.menu_item>a{
 	text-decoration: none;
 	color: #000000;
 }
-.dictionary>a:hover {
+.menu_item>a:hover {
 	border-top: 2px solid #000;
 }
 
@@ -144,15 +144,25 @@ input:-moz-placeholder {
 }
 
 .words{
+
 	font-size: 0.938em;
+	margin-bottom: 1.1725em;
+	margin-top: 0.2345em;
+	/*font-size: 0.938em;
 	margin-bottom:24px;
-	margin-top:2px;
+	margin-top:2px;*/
 }
 
 .language{
 	font-size: 0.938em;
+	border-bottom: rgba(0,0,0, 0.25) solid 1px;
+	padding-bottom: 0.2345em;
+	color: rgba(0,0,0,0.95);
+
+/*	font-size: 0.938em;
 	border-bottom: #000000 solid 1px;
 	padding-bottom: 5px;
+*/
 }
 
 .word{
@@ -180,8 +190,7 @@ input:-moz-placeholder {
 	height: 73px;
 	margin-left: 27px;
 	margin-top:25px;
-	border-top: #000000 solid 7px;
-	
+	border-top: #000000 solid 7px;	
 }
 
 .switch{
@@ -221,43 +230,6 @@ button.next{
 	height: 2em;
 	border-radius: 8px;
 }
-
-
-/*
-.stories{
-	background-image: url(img/btn-bg.png);
-	width: 103px;
-	height: 43px;
-	font-size: 20px;
-	text-align: center;
-	display: inline-block;
-	line-height: 42px;
-	text-decoration: none;
-	color: #000000;
-
-}
-
-.examine{
-	background-image: url(img/btn-bg.png);
-	width: 115px;
-	height: 43px;
-	font-size: 20px;
-	text-align: center; 
-	display: inline-block;
-	line-height: 42px;
-	text-decoration: none;
-	color: #000000;
-	position: relative;
-	right: 4px;
-}
-
-.examine:hover{
-	background-image: url(img/examine-h.jpg);
-	width: 115px;
-	height: 43px;
-}
-
-*/
 
 
 .img_game{
@@ -360,5 +332,22 @@ footer a:visited {
 }
    
    
-   
+article#about {
+	margin-top: 2em;
+	border-top: 7px solid #000;
+	padding: 2em 0 0 0;
+}
 
+#about h1 {
+	font-size: 1.8em;
+	margin: 1em 0 1em 0;
+}
+
+#about p {
+	margin: 0 0 1em 0;
+	line-height: 1.45em;
+}
+
+#about section {
+	float: left;
+}

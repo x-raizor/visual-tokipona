@@ -186,6 +186,4 @@ gameApp.controller('gamePlayer', function ($scope, $http, $cookieStore){
     });
 
     $scope.showMode();
-
-
 });
