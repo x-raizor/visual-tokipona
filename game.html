@@ -23,28 +23,28 @@
         </div>
         <div class="menu_game">
             <div class="switch">
-                <a href="" class="stories">Stories</a>
-                <a href="" class="examine">Examine</a>
+                <button class="left" ng-click="toggleMode()" ng-class="storyState">Stories</button>
+                <button class="right" ng-click="toggleMode()" ng-class="examineState">Examine</button>
             </div>
-            <a href="" ng-click="nextThree()" class="next">Next three</a>
+            <button ng-click="nextThree()" class="next">Next three</button>
         </div>
         <div class="img_game">
           
                 <div class="gbox">
-                    <img class="pic_game" src="pics/{{one.image}}.png">
+                    <img class="pic_game" ng-src="pics/{{one.image}}.png">
                     <div class="gray"></div>
                 </div>
                 <div class="gbox gbox2">
-                    <img class="pic_game" src="pics/{{two.image}}.png">
+                    <img class="pic_game" ng-src="pics/{{two.image}}.png">
                     <div class="gray"></div>
                 </div>
                 <div class="gbox">
-                    <img class="pic_game" src="pics/{{three.image}}.png">
+                    <img class="pic_game" ng-src="pics/{{three.image}}.png">
                     <div class="gray"></div>
                 </div>
            
         </div>
-        <div class="game_translation">
+        <div ng-show="mode" class="game_translation">
             <div class="first">
                 <a href="" ng-click="showHide()" class="word">{{one.toki}}</a>
                 <div ng-show="show" class="inbox2">
@@ -84,6 +84,7 @@
     </footer>
 
     <script src="js/angular.min.js"></script>
+    <script src="js/angular-cookies.min.js"></script>
     <script src="js/game-engine.js"></script>
 </body>
 </html>

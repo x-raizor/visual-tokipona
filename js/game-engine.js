@@ -95,17 +95,24 @@ function Alea() {
  * App Controllers 
  */
 var random = Alea(); // inizialize better randomiator
-var gameApp = angular.module('tokiGame', []);
-gameApp.controller('gamePlayer', function ($scope, $http){
-    
-    $scope.show = true;
+var gameApp = angular.module('tokiGame', ['ngCookies']);
 
-    // fetch pictures data from json
-    $http.get('js/tokipona.json').success(function(data) {
-        $scope.cards = data;
-        $scope.nextThree(); // set first three picture
-    });
-  
+gameApp.controller('gamePlayer', function ($scope, $http, $cookieStore){
+        
+    $scope.toggleFlag = function(flag, coockie) {
+      /**
+       * Toggle flag in scope and in coockies
+       */
+        var value = $cookieStore.get(coockie);
+        if (value == undefined || value == null) { // initiate
+            flag = true;
+            $cookieStore.put(coockie, true);
+        } else { // toggle
+            flag = !flag;
+            $cookieStore.put(coockie, !$cookieStore.get(coockie));
+        }
+    }
+
     $scope.getCard = function() {
     /** 
      * Return string with name of one on 123 picture without extension
@@ -123,6 +130,62 @@ gameApp.controller('gamePlayer', function ($scope, $http){
     };
 
     $scope.showHide = function() {
+    /** 
+     * Show/hide word hints
+     */
         $scope.show = !$scope.show;
+        $cookieStore.put('tipsOn', !$cookieStore.get('tipsOn'));
+    };
+
+    $scope.showMode = function() {
+    /** 
+     * Show which mode is on by setting .selected
+     */
+         if (!$scope.mode) {
+            $scope.storyState = 'selected';
+            $scope.examineState = '';
+        } else {
+            $scope.storyState = '';
+            $scope.examineState = 'selected';
+        }
+    };
+
+    $scope.toggleMode = function() {
+      /**
+       * toggle Story and Examine modes
+       */
+        $scope.mode = !$scope.mode;
+        $cookieStore.put('mode', !$cookieStore.get('mode'));
+        $scope.showMode();     
     }
+
+
+    // Controller initiation
+    // initiate tips trigger
+    var tipsOn = $cookieStore.get('tipsOn');
+    if (tipsOn == undefined || tipsOn == null) {
+        $scope.show = true;
+        $cookieStore.put('tipsOn', true);
+    } else {
+        $scope.show = tipsOn;
+    }
+    
+    // initiate mode trigger
+    var mode = $cookieStore.get('mode');
+    if (mode == undefined || mode == null) {
+        $scope.mode = true;
+        $cookieStore.put('mode', true);
+    } else {
+        $scope.mode = mode;
+    }
+
+    // fetch pictures data from json
+    $http.get('js/tokipona.json').success(function(data) {
+        $scope.cards = data;
+        $scope.nextThree(); // set first three picture
+    });
+
+    $scope.showMode();
+
+
 });
