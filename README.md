@@ -1,6 +1,6 @@
 Toki Pona Visual Dictionary
 ===========================
-*comming soon*
+## http://x-raizor.github.io/visual-tokipona/
 
 ![Ala](https://raw.githubusercontent.com/x-raizor/visual-tokipona/master/pics/ala.png)
 ![A](https://raw.githubusercontent.com/x-raizor/visual-tokipona/master/pics/a.png)
