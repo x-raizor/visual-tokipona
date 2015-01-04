@@ -97,6 +97,8 @@ function Alea() {
 var random = Alea(); // inizialize better randomiator
 var gameApp = angular.module('tokiGame', []);
 gameApp.controller('gamePlayer', function ($scope, $http){
+    
+    $scope.show = true;
 
     // fetch pictures data from json
     $http.get('js/tokipona.json').success(function(data) {
@@ -119,4 +121,8 @@ gameApp.controller('gamePlayer', function ($scope, $http){
         $scope.two   = $scope.cards[$scope.getCard()];
         $scope.three = $scope.cards[$scope.getCard()];
     };
+
+    $scope.showHide = function() {
+        $scope.show = !$scope.show;
+    }
 });

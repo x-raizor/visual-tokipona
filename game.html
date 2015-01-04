@@ -9,10 +9,8 @@
 <body ng-controller="gamePlayer">
 	<div id="canvas" class="container12">
 		<div class="header">
-        <div class="column6">
+        <div class="column12">
             <div class="logo"><a href="index.html">visual toki pona</a></div>
-        </div>
-        <div class="column6">
             <div class="dictionary"><a href="index.html">dictionary</a></div>
             <div class="game current">game</div>
             <!-- form>
@@ -48,8 +46,8 @@
         </div>
         <div class="game_translation">
             <div class="first">
-                <a href="" class="word">{{one.toki}}</a>
-                <div class="inbox2">
+                <a href="" ng-click="showHide()" class="word">{{one.toki}}</a>
+                <div ng-show="show" class="inbox2">
                     <div class="language">english</div>
                     <div class="words">{{one.eng}}</div>
                     <div class="language">русский</div>
@@ -59,8 +57,8 @@
                 </div>
             </div>
             <div class="second">
-                <a href="" class="word">{{two.toki}}</a>
-                <div class="inbox2">
+                <a href="" ng-click="showHide()" class="word">{{two.toki}}</a>
+                <div ng-show="show" class="inbox2">
                     <div class="language">english</div>
                     <div class="words">{{two.eng}}</div>
                     <div class="language">русский</div>
@@ -70,8 +68,8 @@
                 </div>
             </div>
             <div class="third">
-                <a href="" class="word">{{three.toki}}</a>
-                <div class="inbox2">
+                <a href="" ng-click="showHide()" class="word">{{three.toki}}</a>
+                <div ng-show="show" class="inbox2">
                     <div class="language">english</div>
                     <div class="words">{{three.eng}}</div>
                     <div class="language">русский</div>
@@ -82,6 +80,9 @@
             </div>
         </div>
 	</div>
+    <footer ng-include="'footer.html'" class="container12">
+    </footer>
+
     <script src="js/angular.min.js"></script>
     <script src="js/game-engine.js"></script>
 </body>

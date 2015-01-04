@@ -2,7 +2,9 @@ body {
 	font-family: Helvetica, Arial, sans-serif;
 	font-size: 100%;
 	padding: 0 0 4em 0;
+	min-height: 100%;
 }
+
 
 .header{
 	height: 110px;
@@ -14,6 +16,7 @@ body {
 	margin-top:29px;
 	white-space: pre;
 	display: inline-block;
+	margin: 0 1em 0 0;
 }
 
 .logo > a {
@@ -25,7 +28,7 @@ body {
 	border-top:#000000 solid 7px; 
 }
 
-.dictionary{
+.dictionary {
 	font-size: 1.63em;
 	display: inline-block;
 	margin-top:51px;
@@ -44,15 +47,19 @@ body {
 	text-decoration: none;
 	color: #000000;
 }
+.dictionary>a:hover {
+	border-top: 2px solid #000;
+}
+
 .game{
 	font-size: 1.63em;
 	margin-top:51px;
-	margin-left: 102px;
+	margin-left: 2em;
 	display: inline-block;
 	width:65px;
 }
-.game:hover{
-	border-top:#000 solid 7px; 
+.game>a:hover{
+	border-top: #000 solid 2px; 
 }
 .game>a{
 	text-decoration: none;
@@ -108,7 +115,7 @@ input:-moz-placeholder {
 
 .box {
 	border-top:#000000 solid 7px; 
-	padding-top: 30px;
+	padding: 30px 0 20px 0;
 	margin-top: 25px;
 	display: block;
 }
@@ -267,12 +274,29 @@ input:-moz-placeholder {
 	top: 0;
 }
    
-   
+
+footer {
+	bottom: 0;
+}
+
 footer p {
 	border-top: 1px solid #000;
 	padding-top: 1em;
 	margin: 4em 0 0 0;
 }
+
+footer a {
+	color: #000;
+	text-decoration: none;
+	border-bottom: 1px solid rgba(0,0,0, 0.25);
+}
+footer a:hover {
+	border-bottom: 1px solid rgba(0,0,0, 0.65);
+}
+footer a:visited {
+	color: rgba(0,0,0, 0.5);
+}
+
    
    
 .game_translation {
@@ -293,6 +317,7 @@ footer p {
 }
 
 .first, .second, .third {
+	width: 292px;
 	float: left;
 	height: auto;
 }
