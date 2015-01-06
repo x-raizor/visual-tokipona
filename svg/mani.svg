@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.2.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="173px" height="150px" viewBox="0 0 173 150" enable-background="new 0 0 173 150" xml:space="preserve">
+<pattern  x="3086" y="5118" width="3" height="3" patternUnits="userSpaceOnUse" id="Unnamed_Pattern_2" viewBox="0 -3 3 3" overflow="visible">
+	<g>
+		<polygon fill="none" points="0,-3 3,-3 3,0 0,0 		"/>
+		<polygon fill="#FFFFFF" points="3,-3 0,-3 0,0 3,0 		"/>
+		<polygon points="2,-2 1,-2 1,-1 2,-1 		"/>
+		<polygon points="1,-1 0,-1 0,0 1,0 		"/>
+		<polygon points="3,-3 2,-3 2,-2 3,-2 		"/>
+	</g>
+</pattern>
+<g>
+	<ellipse fill="none" stroke="#000000" stroke-miterlimit="10" cx="89.116" cy="29.392" rx="53" ry="28.5"/>
+	<path fill="none" stroke="#000000" stroke-miterlimit="10" d="M133.713,58.892c0.266,1.148,0.403,2.314,0.403,3.5
+		c0,15.741-24.176,28.5-54,28.5c-29.823,0-54-12.759-54-28.5"/>
+	<path fill="none" stroke="#000000" stroke-miterlimit="10" d="M117.116,69.151c-9.665,4.8-22.682,7.74-37,7.74
+		c-29.823,0-54-12.759-54-28.5v15.741"/>
+	<path fill="none" stroke="#000000" stroke-miterlimit="10" d="M35.116,32.633c-5.687,4.515-9,9.932-9,15.759"/>
+	<path fill="none" stroke="#000000" stroke-miterlimit="10" d="M137.1,58.891c1.953,2.972,3.016,6.17,3.016,9.501
+		c0,15.74-23.729,28.5-53,28.5c-18.986,0-35.641-5.368-45-13.437"/>
+	<path fill="none" stroke="#000000" stroke-miterlimit="10" d="M125.116,100.892c-7,10-26.318,14-46,14c-29.271,0-53-13.208-53-29.5
+		c0-3.698,1.223-7.237,3.456-10.5"/>
+	<path fill="none" stroke="#000000" stroke-miterlimit="10" d="M135.625,93.892c2.888,3.517,4.492,7.409,4.492,11.5
+		c0,15.741-23.729,28.5-53,28.5c-17.1,0-32.309-3.239-42-10"/>
+	<path fill="none" stroke="#000000" stroke-miterlimit="10" d="M142.116,29.392v15.5c0,4.757-2.167,9.242-6,13.186
+		c-0.908,0.934-1.911,1.837-3,2.708c-9.518,7.604-25.672,12.606-44,12.606c-29.271,0-53-12.759-53-28.5v-14"/>
+	<path fill="none" stroke="#000000" stroke-miterlimit="10" d="M139.116,74.892v8c0,15.741-24.624,27-55,27
+		c-30.375,0-55-12.759-55-28.5v-7.5"/>
+	<path fill="none" stroke="#000000" stroke-miterlimit="10" d="M132.116,97.892v5c0,15.741-23.729,27-53,27s-53-12.759-53-28.5
+		v-11.5"/>
+	<path fill="none" stroke="#000000" stroke-miterlimit="10" d="M140.116,104.892v15.5c0,15.741-24.4,28.5-54.5,28.5
+		s-54.5-12.759-54.5-28.5v-5.5"/>
+	
+		<pattern  id="SVGID_2_" xlink:href="#Unnamed_Pattern_2" patternTransform="matrix(-1.0359 0.306 -0.306 -1.0359 -21106.3105 -1169.7725)">
+	</pattern>
+	<polygon fill="url(#SVGID_2_)" stroke="#000000" stroke-miterlimit="10" points="125,26 77,46 73,18 75,17 	"/>
+	<path fill="#FFFFFF" stroke="#000000" stroke-miterlimit="10" d="M65.649,19.2c1.329,1.758,5.698,2.199,9.758,0.983
+		c4.061-1.217,6.275-3.625,4.945-5.384c-1.331-1.758-5.699-2.198-9.76-0.982C66.531,15.033,64.318,17.443,65.649,19.2z"/>
+	<ellipse transform="matrix(-0.9961 0.0884 -0.0884 -0.9961 147.2171 27.479)" cx="73" cy="17.001" rx="3.241" ry="2.16"/>
+</g>
+</svg>

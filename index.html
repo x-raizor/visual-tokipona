@@ -17,19 +17,19 @@
                         <div class="menu_item current">dictionary</div>
                         <div class="menu_item"><a href="game.html">game</a></div>
                         <div class="menu_item"><a href="about.html">about</a></div>
-                        <!-- form action="">
+                        <form action="">
                             <div class="search">
-                                <input ng-model="s_text" type="search" placeholder="Search">
-                                <input type="image" src="img/search.jpg">
+                                <input ng-model="query" type="search" placeholder="Search">
+                                <!-- input type="image" src="img/search.jpg" -->
                             </div>
-                        </form -->
+                        </form>
                     </div>
                 </div>
             </head>
             <section id="dictionary" item-selector=".box" load-images="false" masonry="{ transitionDuration: '0.4s', transform: 'scale(1)' }" >
-                <div masonry-brick class="box column6" ng-repeat="card in cards">
+                <div masonry-brick class="box column6" ng-repeat="card in cards | filter:query">
                     <div class="inbox1">
-                        <img class="pic" ng-src="pics/{{card.image}}.png"></img>
+                        <img class="pic" ng-src="svg/{{card.image}}.svg"></img>
                         <div class="word">{{card.toki}}</div>
                     </div>
                     <div class="inbox2">
