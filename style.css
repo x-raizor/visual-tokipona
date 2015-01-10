@@ -416,3 +416,12 @@ article#about {
 #about section {
 	float: left;
 }
+
+.ab_pic{
+	margin-top: 3.6em;
+}
+
+.ab_pic img {
+	position: relative;
+	top: 0.31em;
+}
