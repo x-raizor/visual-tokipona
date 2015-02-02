@@ -4,31 +4,27 @@
         <title>Toki Pona · Visual Dictionary</title>
     	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link href="1140.css" rel="stylesheet">
         <link href="style.css" rel="stylesheet">
     </head>
     <body ng-controller="dictCtrl">
         <div ng-include="'fork.html'"></div>
     	<div id="canvas" class="container12">
-    		<head>
-                <div class="header">
-                    <div class="column12">
-                        <div class="logo">visual toki pona</div>
-                        <div class="menu_item current">dictionary</div>
-                        <div class="menu_item"><a href="game.html">game</a></div>
-                        <div class="menu_item"><a href="about.html">about</a></div>
-                        <form action="">
-                            <div class="search">
-                                <input ng-model="query" type="search" placeholder="Search">
-                                <!-- input type="image" src="img/search.jpg" -->
-                            </div>
-                        </form>
-                    </div>
+    		<header>
+                <div class="logo column5">visual toki pona</div>
+                <div class="column5">
+                    <div class="menu_item current">dictionary</div>
+                    <div class="menu_item"><a href="game.html">game</a></div>
+                    <div class="menu_item"><a href="about.html">about</a></div>
                 </div>
-            </head>
+                <div class="search column2">
+                    <form action="">
+                        <input ng-model="query" type="search" placeholder="Search"> 
+                    </form>
+                </div>  
+            </header>
             <section id="dictionary" item-selector=".box" load-images="false" masonry="{ transitionDuration: '0.4s', transform: 'scale(1)' }" >
                 <div masonry-brick class="box column6" ng-repeat="card in cards | filter:query">
-                    <div class="inbox1">
+                    <div class="inbox1" ng-cloak>
                         <img class="pic" ng-src="svg/{{card.image}}.svg"></img>
                         <div class="word">{{card.toki}}</div>
                     </div>
@@ -42,15 +38,11 @@
                     </div>
                 </div>      
             </section>
-<<<<<<< HEAD
     	</div>
-=======
->>>>>>> gh-pages
         <footer ng-include="'footer.html'" class="container12 long">
         </footer>
     	</div>
         
-
         <script src="js/jquery.min.js"></script>
         <script src="js/jquery.bridget.js"></script>
         <script src="js/get-style-property.js"></script>        
