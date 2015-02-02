@@ -10,22 +10,16 @@
     <body ng-controller="gamePlayer">
         <div ng-include="'fork.html'"></div>
     	<div id="canvas" class="container12">
-            <head>
+            <header>
                 <div class="header">
                     <div class="column12">
                         <div class="logo"><a href="index.html">visual toki pona</a></div>
                         <div class="menu_item"><a href="index.html">dictionary</a></div>
                         <div class="menu_item current">game</div>
                         <div class="menu_item"><a href="about.html">about</a></div>
-                        <!-- form action="">
-                            <div class="search">
-                                <input ng-model="s_text" type="search" placeholder="Search">
-                                <input type="image" src="img/search.jpg">
-                            </div>
-                        </form -->
                     </div>
                 </div>
-            </head>
+            </header>
             <div class="menu_game">
                 <div class="switch">
                     <button class="left" ng-click="toggleMode()" ng-class="storyState">Stories</button>
@@ -36,15 +30,15 @@
             <div class="img_game">
               
                     <div class="gbox">
-                        <img class="pic_game" ng-src="pics/{{one.image}}.png">
+                        <img class="pic_game" ng-src="svg/{{one.image}}.svg">
                         <div class="gray"></div>
                     </div>
                     <div class="gbox gbox2">
-                        <img class="pic_game" ng-src="pics/{{two.image}}.png">
+                        <img class="pic_game" ng-src="svg/{{two.image}}.svg">
                         <div class="gray"></div>
                     </div>
                     <div class="gbox">
-                        <img class="pic_game" ng-src="pics/{{three.image}}.png">
+                        <img class="pic_game" ng-src="svg/{{three.image}}.svg">
                         <div class="gray"></div>
                     </div>
                
@@ -52,7 +46,7 @@
             <div ng-show="mode" class="game_translation">
                 <div class="first">
                     <a href="" ng-click="showHide()" class="word">{{one.toki}}</a>
-                    <div ng-show="show" class="inbox2">
+                    <div ng-cloak ng-show="show" class="inbox2">
                         <div class="language">english</div>
                         <div class="words">{{one.eng}}</div>
                         <div class="language">русский</div>

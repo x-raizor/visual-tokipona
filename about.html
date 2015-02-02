@@ -8,24 +8,18 @@
         <link href="style.css" rel="stylesheet">
     </head>
     <body ng-controller="aboutCtrl">
-        <div ng-include="'fork.html'"></div>x   
+        <div ng-include="'fork.html'"></div>   
     	<div id="canvas" class="container12">
-    		<head>
+    		<header>
                 <div class="header">
                     <div class="column12">
                         <div class="logo"><a href="index.html">visual toki pona</a></div>
                         <div class="menu_item"><a href="index.html">dictionary</a></div>
                         <div class="menu_item"><a href="game.html">game</a></div>
                         <div class="menu_item current">about</div>
-                        <!-- form action="">
-                            <div class="search">
-                                <input ng-model="s_text" type="search" placeholder="Search">
-                                <input type="image" src="img/search.jpg">
-                            </div>
-                        </form -->
                     </div>
                 </div>
-            </head>
+            </header>
             <article id="about" class="column12">
                 <section class="column4">
                    <h1>Dictionary in&nbsp;pictures</h1>
@@ -42,9 +36,10 @@
                     'It was my attempt to understand the meaning of life in 120 words'. Read more in <a href="http://en.wikipedia.org/wiki/Toki_Pona">Wikipedia</a> or official <a href="http://tokipona.org">website.</a></p>
                 </section>
                 <section class="column4">
-                    <img src="svg/seme.svg" alt="">
-                    <img src="svg/pona.svg" alt="">
-                    
+                    <div class="ab_pic">
+                        <img src="svg/seme.svg" alt="">
+                        <img src="svg/pona.svg" alt="">
+                    </div>
                 </section>
             </article>
             <footer ng-include="'footer.html'">
