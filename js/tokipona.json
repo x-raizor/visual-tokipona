@@ -468,6 +468,12 @@
         "rus": "длинный, твёрдый объект, палка, ветка",
         "image": "palisa"
     }, {
+        "eng": "cereal, grain; barley, corn, oat, rice, wheat; bread, pasta, pizza",
+        "ita": "cereale, grano, orzo, mais, avena, riso, frumento, pane",
+        "toki": "pan",
+        "rus": "злак, зерно, ячмень, кукуруза, овёс, рис, пшеница, хлеб, макароны, пицца",
+        "image": "pan"
+    }, {
         "eng": "give, put, send, produce, call (anything), transfer, exchange",
         "ita": "dare, mettere, trasmettere, produrre, chiamata (qualsiasi cosa), il trasferimento, lo scambio",
         "toki": "pana",
