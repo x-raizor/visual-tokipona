@@ -17,9 +17,9 @@ Second, it was fun to see some stories with pictures we made.
 
 
 ## Credits
+* Art — Misha Shkitov
 * Design — Misha Shkitov, Andrei Shapiro
-* Images — Misha Shkitov
-
+* Frontend — Andrew Shapiro
 
 ## License
 You can freely use icons and data set in your projects 
