@@ -25,7 +25,7 @@
             <section id="dictionary" item-selector=".box" load-images="false" masonry="{ transitionDuration: '0.4s', transform: 'scale(1)' }" >
                 <div masonry-brick class="box column6" ng-repeat="card in cards | filter:query">
                     <div class="inbox1" ng-cloak>
-                        <img class="pic" ng-src="svg/{{card.image}}.svg"></img>
+                        <img class="pic" ng-src="svg/{{card.image}}.svg" />
                         <div class="word">{{card.toki}}</div>
                     </div>
                     <div class="inbox2">
