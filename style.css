@@ -341,6 +341,7 @@ input:-moz-placeholder {
 	font-weight: bold;
 	font-size: 2em;
 	margin-top: 10px;
+	clear: both;
 }
 
 .inbox1{
